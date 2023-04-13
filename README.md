@@ -89,8 +89,11 @@ Note: Once the form is filled, the custom resource file named dynakube.yaml will
 Execute the following commands in the terminal:
 
 kubectl create namespace dynatrace
+
 kubectl apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/v0.10.4/kubernetes.yaml
+
 kubectl -n dynatrace wait pod --for=condition=ready --selector=app.kubernetes.io/name=dynatrace-operator,app.kubernetes.io/component=webhook --timeout=300s
+
 kubectl apply -f dynakube.yaml
 
 Note: I could have saved the deployment file to my local machine and run the deployment there. However, as I used the same namespace as the deployment file, I just applied it from the link.
