@@ -104,3 +104,19 @@ Note: I could have saved the deployment file to my local machine and run the dep
 
 
 
+# Dynatrace Presentation - Part 2
+
+Steps that I would take if I see a dip in quality:
+1. Raise a ticket to track issue of the quality dip 
+
+2. Gather data: First, I would collect data on the dip in quality, including the number of issues identified, the types of issues, and any other relevant information.
+
+3. Analyze the data: Next, I would analyze the data to identify any patterns or trends that may be contributing to the dip in quality.
+
+4. Identify root causes: Based on my analysis, I would identify any potential root causes that could be contributing to the dip in quality.
+
+4. Implement solutions: Once I have identified any potential root causes, I would then work with the appropriate teams to develop and implement solutions to address the issues.
+
+5. Monitor results: Finally, I would track and monitor the results of the solutions implemented to ensure that the quality of the production environment is improving.
+
+6. Communicate findings: I would then report these findings in my reports, including the data I collected, the analysis I conducted, the root causes identified, the solutions implemented, and the results achieved. This will allow my team and other stakeholders to stay informed and up-to-date on the progress of the quality improvement efforts.
