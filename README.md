@@ -1,4 +1,8 @@
 # dynatrace Presentation - Part 1
+#Assumptions:
+- Security is not a concern for this demo (Hence didn't consider creating a custom VPC, subnets-private/public, routing table, internet gatway, NAT gatway etc.)
+- Assumed any bug fix for sock-shop is not scoped in this demo as only task is to host the application in kubernetes environment and enable Dynatrace monitoring 
+
 
 ## Launch EC2 Instance 
 Login to AWS console and go to EC2 service > Launch Instance
@@ -82,7 +86,11 @@ Check the URL to see if we get HTTP code 200 OK to confirm the web service is ac
   
 ## Deploy Dynatrace 
 
-login to dynatrace trial account. Go to "Deploy Dynatrace" - the green button at the top right corner > Start Installation > Select Kubernetes > Fill out the form with name and generate the tokens. 
+login to dynatrace trial account. 
+- go to "Deploy Dynatrace" (the green button at the top right corner) 
+- go to Start Installation 
+- Select Kubernetes 
+- Fill out the form with name and generate the tokens. 
 
 Note: Once the form is filled, the custom resource file named dynakube.yaml will be generated which I downloaded in my local machine and subsequently copied it in the EC2 for later use. This file is useful as it automatically populated the tokens and also updated the apiURL with my unique dynatrace ID jyi05749.
 
@@ -120,3 +128,6 @@ Steps that I would take if I see a dip in quality:
 5. Monitor results: Finally, I would track and monitor the results of the solutions implemented to ensure that the quality of the production environment is improving.
 
 6. Communicate findings: I would then report these findings in my reports, including the data I collected, the analysis I conducted, the root causes identified, the solutions implemented, and the results achieved. This will allow my team and other stakeholders to stay informed and up-to-date on the progress of the quality improvement efforts.
+
+
+
